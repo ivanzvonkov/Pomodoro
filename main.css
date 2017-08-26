@@ -1,0 +1,124 @@
+
+
+html,body{
+
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+	background-image: url('waves.jpeg');
+	background-size: cover;
+	background-color: black;
+	color:white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-shadow: 0 1px 5px rgba(0,0,0,0.1);
+		
+}
+
+#fade{
+	height: 100%;
+	width: 100%;
+	background-color:black;
+	position: absolute;
+}
+
+.btn:hover{
+	color:white;
+}
+
+#main{
+	
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: rgba(0,0,0,0.5);
+	
+	text-align: center;
+	
+}
+
+#main_wrapper{
+	padding-top: 15em;
+}
+
+#main:hover{
+	background-color: rgba(0,0,0,0.6);
+}
+
+#timer{
+	font-size: 750%;
+	font-weight: 500;
+}
+
+#text, #subtext{
+	font-size: 300%;
+	font-weight: 200;
+}
+
+#cog_wrapper{
+	background-color: yellow;
+	color: rgba(255,255, 255, 0.7);
+	width: 50px;
+	height:0px;
+	margin-left: 1em;
+}
+
+#cog_wrapper:hover{
+	color: white;
+	
+}
+
+#settings{
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 1em;
+	background-color: rgba(0,0,0,0.8);
+	font-size: 120%;
+	font-weight: 200;
+}
+
+#work, #break, #amount, #slider, #notification_options {
+	padding-bottom: 1em;
+}
+
+
+.checkbox{
+	font-size: 85%;
+}
+
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+
+
+a{
+	text-decoration: none;
+	color:rgba(255,255, 255, 0.7);
+}
+
+a:hover{
+	text-decoration: none;
+	color:white;
+}
+
+#background_link{
+	padding-top: 1em;
+	height:0px;
+	width: 150px;
+	margin-left: 5em;
+}
+
+
+footer{
+	position: absolute;
+	color: rgba(255,255, 255, 0.7);
+  	bottom: 0;
+  	width: 100%;
+  	/* Set the fixed height of the footer here */
+  	height: 60px;
+}
+
+
+
