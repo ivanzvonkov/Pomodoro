@@ -191,6 +191,7 @@ $(document).ready(function(){
 	$('#work_slider').slider({
 
 		formatter: function(value) {
+			$("#reset_timer").show();
 			$("#work_label").html('');
 			$("#work_label").append("Work: <strong>"+value+"</strong>");
 			tempWork = value*60;
@@ -201,6 +202,7 @@ $(document).ready(function(){
 	//when break slider is moved
 	$('#break_slider').slider({
 		formatter: function(value) {
+			$("#reset_timer").show();
 			$("#break_label").html('');
 			$("#break_label").append("Break: <strong>"+value+"</strong>");
 			tempRelax = value*60;
@@ -211,7 +213,7 @@ $(document).ready(function(){
 	//when amount slider is moved
 	$('#amount_slider').slider({
 		formatter: function(value) {
-			
+			$("#reset_timer").show();
 			$("#amount_label").html('');
 			$("#amount_label").append("Amount: <strong>"+value+"</strong>");
 			tempPomodoroAmount = value;
@@ -278,6 +280,7 @@ $(document).ready(function(){
 
 	//cog click
 	$("#cog_wrapper").click(function(){
+		$("#reset_timer").hide();
 		
 		if(settingsOn == false){
 			settingsOn = true;
