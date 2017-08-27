@@ -14,7 +14,7 @@ function setup(work){
 	state = "work";
 	
 	$("#subtext").html('');
-	$("#subtext").append("Stop");
+	$("#subtext").append("Reset");
 			
 	session = 1;
 	relaxSession = 1;
@@ -143,7 +143,7 @@ function displayNotification(notificationText){
 //clears timer
 function clearTimer(work){
 	$("#subtext").html('');
-	$("#subtext").append("Reset");
+	$("#subtext").append("Start");
 
 	var minutes = Math.floor(work/60);
 	var seconds = work - (minutes*60);
