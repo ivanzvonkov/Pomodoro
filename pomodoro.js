@@ -164,8 +164,8 @@ $(document).ready(function(){
 	
 	audioElement.setAttribute('src', 'pluck.mp3');
 
-	var pomodoroAmount = 2;
-	var tempPomodoroAmount = 2;
+	var pomodoroAmount = 4;
+	var tempPomodoroAmount = 4;
 	var work = 1500;
 	var tempWork = 1500;
 	var relax = 300;
