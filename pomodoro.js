@@ -181,11 +181,10 @@ $(document).ready(function(){
 	
 	$("#settings").hide();
 
-	$("#reset_timer").hide();
-
 	$(window).load(function(){
 			$("#fade").fadeOut('slow');
 			$(".fluid-contained").fadeIn('slow');
+			$('#reset_timer').hide()
 			Notification.requestPermission();
 	});
 
@@ -261,13 +260,8 @@ $(document).ready(function(){
 		i++;
 		$("#fade").fadeIn(600);
 		$("body").css("background-image", "url('https://source.unsplash.com/random/"+i+"')");
-		//$("body").ready(function(){
-			$("#fade").fadeOut(800);
-			console.log("loaded");
-		//});
-			
-		
-			
+		$("#fade").fadeOut(800);
+		console.log("loaded");	
 	});
 
 	//reset timer after settings are changed
@@ -276,8 +270,8 @@ $(document).ready(function(){
 		relax = tempRelax
 		pomodoroAmount = tempPomodoroAmount;
 		settingsOn = false;
-		$("#settings").fadeOut();
-		$("#reset_timer").hide();
+		$("#settings").fadeOut(200);
+		$("#reset_timer").fadeOut(200);
 		clearTimer(work);
 	});
 
@@ -287,10 +281,10 @@ $(document).ready(function(){
 		
 		if(settingsOn == false){
 			settingsOn = true;
-			$("#settings").show();
+			$("#settings").fadeIn(200);
 		}else{
 			settingsOn = false;
-			$("#settings").hide();
+			$("#settings").fadeOut(200);
 		}
 	});
 
