@@ -181,6 +181,8 @@ $(document).ready(function(){
 	
 	$("#settings").hide();
 
+	$("#reset_timer").hide();
+
 	$(window).load(function(){
 			$("#fade").fadeOut('slow');
 			$(".fluid-contained").fadeIn('slow');
@@ -274,13 +276,14 @@ $(document).ready(function(){
 		relax = tempRelax
 		pomodoroAmount = tempPomodoroAmount;
 		settingsOn = false;
-		$("#settings").hide();
+		$("#settings").fadeOut();
+		$("#reset_timer").hide();
 		clearTimer(work);
 	});
 
 	//cog click
 	$("#cog_wrapper").click(function(){
-		$("#reset_timer").hide();
+		
 		
 		if(settingsOn == false){
 			settingsOn = true;
