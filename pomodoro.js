@@ -271,8 +271,13 @@ $(document).ready(function(){
 		pomodoroAmount = tempPomodoroAmount;
 		settingsOn = false;
 		$("#settings").fadeOut(200);
-		$("#reset_timer").fadeOut(200);
 		clearTimer(work);
+	});
+
+	//close button
+	$('#close-button').click(function(){
+		settingsOn = false;
+		$("#settings").fadeOut(200);
 	});
 
 	//cog click

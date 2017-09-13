@@ -88,6 +88,14 @@ html,body{
 	font-weight: 200;
 }
 
+.close{
+	color:white;
+}
+
+.close :hover {
+	color: white;
+}
+
 #work, #break, #amount, #slider, #notification_options {
 	padding-bottom: 1em;
 }
