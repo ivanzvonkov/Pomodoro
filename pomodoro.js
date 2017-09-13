@@ -174,8 +174,8 @@ $(document).ready(function(){
 	var settingsOn = false;
 	var colorBlack = true;
 	var i = 0;
-	var img_url = "https://source.unsplash.com/random/"+ $(window).width() +"x" +$(window).height();
-	document.body.style.backgroundImage = "url('"+img_url+"')";
+	/*var img_url = "https://source.unsplash.com/random/"+ $(window).width() +"x" +$(window).height();
+	document.body.style.backgroundImage = "url('"+img_url+"')";*/
 
 	$("#subtext").hide();
 	
