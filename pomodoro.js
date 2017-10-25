@@ -80,13 +80,13 @@ function timer(work, relax, amount, startTime){
 		if(state == "work"){
 			session++;
 			state = "break";
-			displayNotification("Break");
+			displayNotification("Break "+relaxSession);
 			setTimeout(function(){
 				//displayNotification("Break");
 				$("#text").html('');
-				$("#text").append("Break");
+				$("#text").append("Break "+relaxSession);
 				$("title").html('');
-				$("title").append("Break");
+				$("title").append("Break "+relaxSession);
 			}, 1000);
 			
 
@@ -243,6 +243,7 @@ $(document).ready(function(){
 			if (Notification.permission !== "granted")
     			Notification.requestPermission();
 			notificationAlert = true;
+			displayNotification("Here's a Notification");
 		}
 	});
 
@@ -251,14 +252,16 @@ $(document).ready(function(){
 		console.log("soundAlert is " + soundAlert)
 		if(soundAlert == true)
 			soundAlert = false;
-		else
+		else{
+			audioElement.play();
 			soundAlert = true;
+		}
 	});
 	
 	//toggle to change background
 	$("#change_background").click(function(){
 		i++;
-		$("#fade").fadeIn(600);
+		$("#fade").fadeIn(200);
 		$("body").css("background-image", "url('https://source.unsplash.com/random/"+i+"')");
 		$("#fade").fadeOut(800);
 		console.log("loaded");	

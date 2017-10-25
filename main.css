@@ -110,7 +110,7 @@ html,body{
 }
 
 
-a{
+a, a:active, a:visited, a:link{
 	text-decoration: none;
 	color:rgba(255,255, 255, 0.7);
 }
