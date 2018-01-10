@@ -262,7 +262,7 @@ $(document).ready(function(){
 	$("#change_background").click(function(){
 		i++;
 		$("#fade").fadeIn(200);
-		$("body").css("background-image", "url('https://source.unsplash.com/random/"+i+"')");
+		$("body").css("background-image", "url('https://source.unsplash.com/random/"+i+30+"')");
 		$("#fade").fadeOut(800);
 		console.log("loaded");	
 	});
