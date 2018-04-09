@@ -7,4 +7,4 @@
 https://ivanzvonkov.github.io/Pomodoro/
 
 ### Screenshot(s)
-![alt text](https://ivanzvonkov.github.io/ivanzvonkov/website_pictures/Pomodoro.png)
+![alt text](https://raw.githubusercontent.com/ivanzvonkov/Pomodoro/master/screenshot-pomodoro.png)
